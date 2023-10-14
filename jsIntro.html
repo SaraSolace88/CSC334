@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML</title>
+        <script>
+            console.log("Hello, World!");
+
+            let a = 1;
+            let b = 2;
+            let s = "Hello"; //both '' and "" work for defining strings.
+            let t = s + " JavaScript";
+            console.log(s, t);
+            console.log("This is the length of t: ", t.length);
+
+            //can use boolean: true or false
+            let c = true;
+            console.log(!b, b || true, b && true);
+
+            let arr = []; //empty arr
+            let primes = [2,3,5,7,11,13,17];
+            console.log(primes); //can straight print full array.
+
+            primes.push(19, 23, 29, 31);
+
+            for(let i = 0; i < primes.length; i++){
+                console.log(primes[i]);
+            }
+
+            let i = 1;
+            while (i <= 10) {
+                console.log(i);
+                i++;
+            }
+
+            i = 1;
+
+            do {
+                console.log(i);
+                i++;
+            }while (i < 10);
+
+            /*let add = function(x, y) {
+                return x + y; //defining a function as a variable.
+            }*/
+
+            let result = add(4, 5);
+            console.log(result); //don't have to declare function above 'main', can declare at anytime.
+            //have to declare variables b4 their use though.
+            //using variables as functions is important in js
+
+            function add(x, y) {
+                return x + y;
+            }
+
+            function call_a_function(func, x) {
+                func(x);
+            }
+
+            call_a_function(console.log, "Hello from a callback!");
+
+            setTimeout(function() {
+                console.log("Called back after 3 seconds!");
+            }, 3000); //in 3 sec call back this funtion.
+
+            //setInterval - same as setTimeout but prints in intervals of seconds.
+
+        </script>    
+    </head>
+    <body>
+        <p>
+            This is a paragraph.
+        </p>
+    </body>
+</html>

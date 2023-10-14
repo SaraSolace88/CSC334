@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Calculator</title>
+
+        <script src="calculator.js"></script>
+
+        <style>
+            body {
+                text-align: center;
+            }
+
+            .calc-container {
+                margin-top: 50px;
+                padding: 20px;
+                border: 4px solid #666;
+
+                display: inline-block;
+                background-color: #888;
+            }
+
+            input {
+                width: 400px;
+                text-align: right;
+                height: 30px;
+                font-size: 1.2rem;
+                font-family: monospace;
+            }
+
+            table {
+                width: 400px;
+            }
+
+            table * {
+                padding: 0;
+                margin: 0;
+            }
+
+            table td button {
+                width: 100px;
+                height: 30px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="calc-container">
+            <input id = 'output' readonly type="text" value="0">
+
+            <table>
+                <tbody>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td><button id = "ce" data-action="ce">CE</button></td>
+                        <td><button id = "divide" data-action="/">/</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id = "seven" data-action="7">7</button></td>
+                        <td><button id = "eight" data-action="8">8</button></td>
+                        <td><button id = "nine" data-action="9">9</button></td>
+                        <td><button id = "multiply" data-action="*">*</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id = "four" data-action="4">4</button></td>
+                        <td><button id = "five" data-action="5">5</button></td>
+                        <td><button id = "six" data-action="6">6</button></td>
+                        <td><button id = "minus" data-action="-">-</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id = "one" data-action="1">1</button></td>
+                        <td><button id = "two" data-action="2">2</button></td>
+                        <td><button id = "three" data-action="3">3</button></td>
+                        <td><button id = "add" data-action="+">+</button></td>
+                    </tr>
+                    <tr>
+                        <td><button id = "sign" data-action="+/-">+/-</button></td>
+                        <td><button id = "zero" data-action="0">0</button></td>
+                        <td><button id = "decimal" data-action=".">.</button></td>
+                        <td><button id = "equals" data-action="=">=</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Assignment 2</title>
+        <style>
+            body{
+                background-color: lightsteelblue;
+                margin: 0;
+                padding: 0;
+            }
+            .mainHeading {
+                text-align: center;
+            }
+            span{
+                overscroll-behavior-inline: contain;
+                position: absolute;
+                padding: 10px;
+                margin-top: 10px;
+                margin-left: 150px;
+            }
+            .header{
+                height: 40px;
+                width: 100vw;
+                background-color: teal;
+                position:fixed;
+                top:0;
+                overflow: hidden;
+            }
+            .sideBar{
+                background-color: cyan;
+                top:40px;
+                height: 100vh;
+                width: 150px;
+                display: inline-block;
+                position: fixed;
+                left: 0;
+                overflow: hidden;
+            }
+            .header a{
+                color:black;
+                padding: 10px 15px;
+                text-decoration: none;
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                float: none;
+            }
+            .header a:hover{
+                border-bottom: 5px solid cyan;
+                padding-top: 10px;
+                padding-bottom: 5px;
+            }
+            .classes{
+                transform: translate(-50%, -50%);
+            }
+            .home{
+                transform: translate(-150%, -50%);
+            }
+            .about{
+                transform: translate(50%, -50%);
+            }
+            .items{
+                background-color: lightsteelblue;
+                margin:5px;
+                width: 140px;
+                text-align: center;
+            }
+            .bottom{
+                position: absolute;
+                bottom: 50px;
+            }
+        </style>
+    </head>
+    <body>
+        <span>
+            <h1 class="mainHeading"><em>The Main Heading</em></h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing edivt. Ad, a nemo voluptates architecto asperiores adipisci, ea praesentium iusto doloremque necessitatibus exercitationem optio atque impedit aut mollitia suscipit non perspiciatis enim. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eveniet iusto nostrum ad, nisi facere recusandae deleniti eos provident natus repudiandae similique quaerat labore dignissimos odit obcaecati magnam necessitatibus omnis. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat dolore repellat fuga laborum dignissimos iusto eveniet ex reiciendis atque, animi qui cumque quae porro laudantium exercitationem possimus quo earum repellendus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi eaque aliquid consectetur nam temporibus? Ipsum excepturi molestias suscipit temporibus repudiandae reprehenderit ipsam, odio doloribus ipsa, numquam recusandae voluptates molestiae dolorum!</p>
+            <h1>Sub-Heading</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, cum. Veritatis recusandae fugit, ad porro consequatur repudiandae beatae praesentium at nesciunt, doloremque eum molestias aperiam impedit obcaecati neque nostrum adipisci! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione, beatae repellat, enim perferendis ad omnis laborum et magni cupiditate qui amet exercitationem dolore perspiciatis quia esse sed quasi earum voluptatem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis nemo ratione quo suscipit illo tempora quis. Iusto voluptate fugit dolorem asperiores sed mollitia explicabo ullam ipsum, cupiditate iste quae fuga. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur quisquam adipisci error molestiae rem ipsa cum unde quidem odio iste temporibus corporis, voluptatum atque cumque accusamus facilis ut recusandae incidunt. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat obcaecati labore quas iure aliquam vel! Minima reprehenderit, pariatur tempora veniam architecto laudantium dignissimos, molestiae laborum quos, eum amet voluptates dolor? Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias mollitia vitae, quidem nulla quas magni! Ex facilis architecto similique, dolores sed numquam, distinctio quod deserunt vero tempora minima a saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ipsam alias nesciunt possimus facere rerum dolores minus dolorum, saepe quisquam molestiae commodi nostrum earum quidem sequi praesentium quas. Saepe, ea. Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque recusandae fugiat maiores esse. Tempore laudantium cum reiciendis assumenda, ipsum, sit eum optio sunt mollitia, deleniti ab similique quam. Porro, nesciunt. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci, non nulla voluptates similique laboriosam veritatis culpa quam. Doloribus, vel voluptas dignissimos cumque nihil ad quibusdam eum, reiciendis molestiae voluptatem non!</p>
+            <h1>Final Sub-Heading</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur asperiores repellat qui enim voluptatem deserunt commodi nesciunt aliquam. Mollitia impedit quisquam repellendus quos magnam aspernatur a facilis! Quidem, doloribus neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui corporis voluptates facilis commodi iusto autem, sapiente aspernatur deserunt, ea omnis animi. Quibusdam, soluta deserunt. Voluptate sit autem quos esse omnis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum non repellat esse commodi quam ab perspiciatis eum fuga a, voluptatum exercitationem sunt quisquam numquam dolore molestiae aliquid ullam culpa similique.</p>
+        </span>
+        <div class="header">
+            <a href="home" class="home">Home</a>
+            <a href="Classes" class="classes">Classes</a>
+            <a href="About" class="about">About</a>
+        </div>
+        <div class="sideBar">
+            <div class="items">Item 1</div>
+            <div class="items">Item 2</div>
+            <div class="items">Item 3</div>
+            <div class="items bottom" >Item 4</div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+body {
+    background-color:darkgray;
+}
+
+.design1{
+    font-size: larger;
+    text-decoration: wavy;
+    text-emphasis: triangle;
+}
+
+#design2{
+    color: limegreen;
+    font-size: x-large;
+}
+
+[design3]{
+    border: 5px solid black;
+    color:blue;
+}
+
+div ol{
+    text-emphasis: wavy;
+    color:pink;
+}
+
+div > ul{
+    font-size: xx-large;
+}
+
+h1 ~ p{
+    background-color: blueviolet;
+}
+
+h1 + p{
+    font-size: xx-small;
+}

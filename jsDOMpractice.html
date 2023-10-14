@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //Generates a random number between 0 and max-1
+        function randInteger(max){
+            return Math.random(colors) * max;
+        }
+
+        window.addEventListener("load", function(){
+        let paragraphs = document.querySelectorAll("p");
+        console.log(paragraphs);
+
+        for(let i = 0; i < 10; i++){
+
+        }
+
+        let colors = [
+            "red",
+            "blue",
+            "green",
+            "yellow",
+            "black",
+        ];
+
+        for(let i = 0; i < paragraphs.length; i++){
+            paragraphs[i].style.color = colors[Math.floor(randInteger(colors.length)];
+        }
+
+        let test_div = document.getElementById("test-div");
+        
+        let test_div_p = test_div.querySelector("p");
+
+        console.log(document.querySelector("body").children);
+
+        &lt;h1&gt;
+
+        });
+    </script>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat quidem nesciunt ab modi libero maiores at! Velit atque aliquid, quaerat deserunt impedit explicabo a quos! Delectus illo quas nesciunt corporis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequuntur blanditiis iure dolorem, quisquam quaerat inventore iste ut. Maiores soluta labore doloribus eveniet praesentium ad nesciunt ducimus tenetur harum rerum!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores delectus sunt quas fugit error qui, accusantium aspernatur neque accusamus quae quod eligendi rerum natus omnis dolore, a aut alias aliquam!</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus repellendus nulla optio dolorum aliquam, asperiores odit sapiente quam facere fuga, reiciendis nostrum doloribus porro illo omnis provident itaque! Natus, earum?</p>
+    <div id="test_div">
+        <p>Paragraph inside the div</p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus reiciendis dolor officia optio velit. Mollitia eveniet facere non in dolorum odit nihil consequatur dignissimos sunt voluptatibus itaque sed, a laudantium.</div>
+</body>
+</html>

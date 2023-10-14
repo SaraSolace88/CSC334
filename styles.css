@@ -1,0 +1,21 @@
+body {
+    background-color:springgreen;
+    color: black;
+}
+h2 {
+    color: red;
+}
+li {
+    color: yellow;
+}
+#important-thing {
+    background-color:white;
+    color: black;
+}
+.important-thing {
+    background-color:white;
+    color: black;
+}
+[is-cool="true"]{
+    text-decoration: underline;
+}
